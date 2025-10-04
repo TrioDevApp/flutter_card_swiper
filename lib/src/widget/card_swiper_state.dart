@@ -49,8 +49,7 @@ class _CardSwiperState<T extends Widget> extends State<CardSwiper>
   }
 
   @override
-  void didUpdateWidget(oldWidget)
-  {
+  void didUpdateWidget(CardSwiper oldWidget) {
     super.didUpdateWidget(oldWidget);
     controllerSubscription?.cancel();
     controllerSubscription =
